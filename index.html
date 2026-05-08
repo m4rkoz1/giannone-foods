@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giannone Foods - Comercial Importadora do Grupo Giannone. Sabores do mundo, direto para sua indústria.">
+    <title>Giannone Foods | Sabores do mundo, direto para sua indústria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Giannone Foods Logo" id="site-logo">
+            </a>
+            <nav class="nav-links">
+                <a href="#inicio" data-i18n="nav_home">Início</a>
+                <a href="#sobre" data-i18n="nav_about">Quem Somos</a>
+                <a href="#produtos" data-i18n="nav_products">Produtos</a>
+                <a href="#diferenciais" data-i18n="nav_diff">Diferenciais</a>
+            </nav>
+            <div class="nav-actions">
+                <div class="lang-switcher">
+                    <button id="lang-pt" class="lang-btn active">PT</button>
+                    <span class="lang-sep">|</span>
+                    <button id="lang-en" class="lang-btn">EN</button>
+                </div>
+                <a href="#contato" class="btn btn-primary nav-contact-btn" data-i18n="nav_contact">Fale Conosco</a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg-anim" style="background-image: url('hero_bg.png');"></div>
+        <div class="snow-particles"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="animate-fade-up">
+                <span data-i18n="hero_title_1">Pioneiros em </span>
+                <span class="highlight" data-i18n="hero_title_2">Morangos Congelados</span><br>
+                <span data-i18n="hero_title_3">no Brasil</span>
+            </h1>
+            <p class="animate-fade-up delay-1" data-i18n="hero_desc">Liderando o mercado desde o início de nossas operações. Somos os maiores importadores do país, levando os sabores do mundo direto para a sua indústria.</p>
+            <div class="hero-buttons animate-fade-up delay-2">
+                <a href="#produtos" class="btn btn-primary" data-i18n="hero_btn_1">Conheça a Linha</a>
+                <a href="#sobre" class="btn btn-secondary" data-i18n="hero_btn_2">Sobre a Empresa</a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <a href="#sobre" class="scroll-indicator animate-fade-up delay-2">
+            <span class="mouse">
+                <span class="wheel"></span>
+            </span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="about section-padding">
+        <div class="container about-container">
+            <div class="about-text">
+                <div class="section-tag" data-i18n="about_tag">O Grupo Giannone</div>
+                <h2 data-i18n="about_title">Tradição, Qualidade e Eficiência</h2>
+                <p data-i18n="about_p1">O Grupo Giannone é composto por indústrias, transportadoras e uma Comercial Importadora, a <strong>Giannone Foods</strong>. Com vasta experiência no mercado, atuamos na importação e venda de produtos destinados a indústrias.</p>
+                <p data-i18n="about_p2">Nossa missão é garantir qualidade e eficiência para o seu negócio. Com uma essência inovadora, estamos sempre à frente para atendê-lo da melhor forma possível.</p>
+                
+                <ul class="about-features">
+                    <li><i class="fas fa-trophy"></i> <span data-i18n="about_f1"><strong>1º Lugar</strong> em Venda de Morango Congelado no Brasil</span></li>
+                    <li><i class="fas fa-globe-americas"></i> <span data-i18n="about_f2">Atuação em <strong>mais de 40 países</strong></span></li>
+                    <li><i class="fas fa-history"></i> <span data-i18n="about_f3">Mais de <strong>20 anos de experiência</strong> em importação</span></li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="about_products.png" alt="Morangos, mangas e vegetais congelados">
+                <div class="experience-badge" style="width: 160px; height: 160px; bottom: -40px; right: -20px;">
+                    <span class="number">+20</span>
+                    <span class="text" data-i18n="about_badge">Anos de<br>Mercado</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estrutura Section -->
+    <section class="features section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag" data-i18n="infra_tag">Infraestrutura</div>
+                <h2 data-i18n="infra_title">A Força da Nossa Estrutura</h2>
+                <p data-i18n="infra_desc">Equipe própria e estrutura dedicada em diversas localidades do Brasil e do mundo.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fas fa-building"></i></div>
+                    <h3 data-i18n="infra_b1_t">Estrutura Internacional</h3>
+                    <p data-i18n="infra_b1_d">Com filial no Egito e equipe própria, asseguramos a qualidade de nossos produtos em todas as etapas do processo.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3 data-i18n="infra_b2_t">Atendimento Nacional</h3>
+                    <p data-i18n="infra_b2_d">Entrega direta em todo o território brasileiro. Possuímos sedes em <strong>SP e PE</strong> para o atendimento fracionado.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+                    <h3 data-i18n="infra_b3_t">Certificados de Qualidade</h3>
+                    <p data-i18n="infra_b3_d">Possuímos todas as certificações regulatórias e de qualidade exigidas pelos mercados mais rigorosos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos Section -->
+    <section id="produtos" class="products section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag" data-i18n="prod_tag">Linha de Produtos</div>
+                <h2 data-i18n="prod_title">Frutas, Vegetais, Polpas e Purês</h2>
+                <p data-i18n="prod_desc">Nossa linha completa de produtos congelados de altíssima qualidade para a indústria alimentícia.</p>
+            </div>
+            <div class="products-grid">
+                <!-- Morangos e Frutas Vermelhas -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="product_berries.png" alt="Morango Congelado">
+                        <span class="badge" style="background-color: var(--color-primary);" data-i18n="prod_badge_1">Top 1 Brasil</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="prod_c1_t">Frutas Vermelhas</h3>
+                        <p data-i18n="prod_c1_d"><strong>Morango Congelado:</strong> Inteiro, fatiado e em cubos.<br><strong>Outros:</strong> Framboesa, Blueberry (Mirtilo) e Amora (inteiros).</p>
+                    </div>
+                </div>
+                <!-- Outras Frutas -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="product_mango.png" alt="Manga e Frutas">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="prod_c2_t">Frutas Diversas</h3>
+                        <p data-i18n="prod_c2_d"><strong>Manga:</strong> Congelada inteira e fatiada.<br><strong>Limão e Laranja:</strong> Fatiada.<br><strong>Melancia e Maçã:</strong> Em cubos.</p>
+                    </div>
+                </div>
+                <!-- Vegetais e Purês -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="product_veggies.png" alt="Vegetais Congelados">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="prod_c3_t">Vegetais e Purês</h3>
+                        <p data-i18n="prod_c3_d"><strong>Vegetais:</strong> Brócolis, Couve-flor, Vagem, Ervilha, Alcachofra e Cebola.<br><strong>Purês e Polpas:</strong> Congelados, pasteurizados ou assépticos (força única ou concentrados).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section id="diferenciais" class="features section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag" data-i18n="diff_tag">Por Que Escolher a Giannone?</div>
+                <h2 data-i18n="diff_title">Nossos Diferenciais</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-box" style="padding: 30px 20px;">
+                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3 data-i18n="diff_b1_t">Expertise</h3>
+                    <p data-i18n="diff_b1_d">Temos amplo know-how no mercado de importação para melhor atendê-lo.</p>
+                </div>
+                <div class="feature-box" style="padding: 30px 20px;">
+                    <div class="feature-icon"><i class="fas fa-search-plus"></i></div>
+                    <h3 data-i18n="diff_b2_t">Qualidade</h3>
+                    <p data-i18n="diff_b2_d">Equipe própria para acompanhar de perto a produção e o carregamento.</p>
+                </div>
+                <div class="feature-box" style="padding: 30px 20px;">
+                    <div class="feature-icon"><i class="fas fa-satellite-dish"></i></div>
+                    <h3 data-i18n="diff_b3_t">Informação</h3>
+                    <p data-i18n="diff_b3_d">Acompanhamento em tempo real, desde o embarque na origem até a entrega.</p>
+                </div>
+                <div class="feature-box" style="padding: 30px 20px;">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 data-i18n="diff_b4_t">Garantia</h3>
+                    <p data-i18n="diff_b4_d">Entrega pontual e com o alto padrão de qualidade exigido pelo mercado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contato" class="cta-section">
+        <div class="container cta-container">
+            <div class="cta-content">
+                <h2 data-i18n="cta_title">Sabores do mundo, direto para sua indústria.</h2>
+                <p data-i18n="cta_desc">Entre em contato hoje mesmo e conheça a excelência de quem lidera a importação no Brasil.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large"><i class="fab fa-whatsapp"></i> <span data-i18n="cta_btn_1">Falar com Especialista</span></a>
+                    <a href="mailto:contato@giannonefoods.com.br" class="btn btn-outline btn-large" data-i18n="cta_btn_2">Solicitar Orçamento</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <img src="logo.png" alt="Giannone Foods Logo" class="footer-logo">
+                <p data-i18n="footer_desc">O grupo Giannone é composto por indústrias, transportadoras e uma Comercial Importadora. Garantimos qualidade e eficiência para o seu negócio.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3 data-i18n="footer_nav">Navegação</h3>
+                <ul>
+                    <li><a href="#inicio" data-i18n="nav_home">Início</a></li>
+                    <li><a href="#sobre" data-i18n="nav_about">Quem Somos</a></li>
+                    <li><a href="#produtos" data-i18n="nav_products">Produtos</a></li>
+                    <li><a href="#diferenciais" data-i18n="nav_diff">Diferenciais</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18n="footer_cont">Entre em Contato</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer_c1">Sedes em SP e PE<br>Filial no Egito</span></li>
+                    <li><i class="fas fa-globe-americas"></i> <span data-i18n="footer_c2">Atendimento em todo Brasil</span></li>
+                    <li><i class="fas fa-envelope"></i> contato@giannonefoods.com.br</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Giannone Foods. <span data-i18n="footer_rights">Todos os direitos reservados.</span></p>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
