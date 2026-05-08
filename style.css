@@ -380,20 +380,9 @@ img {
     display: inline-block;
 }
 
-.hero h1 span.highlight::after {
-    content: '';
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: var(--color-secondary);
-    border-radius: 2px;
-}
-
 .hero p {
     font-size: 20px;
-    margin-bottom: 40px;
+    margin: 0 auto 40px auto;
     opacity: 0.9;
     max-width: 600px;
 }
