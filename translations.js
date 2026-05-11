@@ -28,7 +28,7 @@ const translations = {
         infra_b1_t: "Estrutura Internacional",
         infra_b1_d: "Com equipe própria, asseguramos a qualidade de nossos produtos em todas as etapas do processo.",
         infra_b2_t: "Atendimento Nacional",
-        infra_b2_d: "Entrega direta em todo o território brasileiro. Possuímos sedes em <strong>SP e PE</strong> para o atendimento fracionado.",
+        infra_b2_d: "Entrega direta em todo o território brasileiro. Possuímos sede no <strong>RJ</strong> para o atendimento fracionado.",
         infra_b3_t: "Certificados de Qualidade",
         infra_b3_d: "Possuímos todas as certificações regulatórias e de qualidade exigidas pelos mercados mais rigorosos.",
         
@@ -62,7 +62,7 @@ const translations = {
         footer_desc: "O grupo Giannone é composto por indústrias, transportadoras e uma Comercial Importadora. Garantimos qualidade e eficiência para o seu negócio.",
         footer_nav: "Navegação",
         footer_cont: "Entre em Contato",
-        footer_c1: "Sedes em SP e PE",
+        footer_c1: "Sede no RJ",
         footer_c2: "Atendimento em todo Brasil",
         footer_rights: "Todos os direitos reservados."
     },
@@ -95,7 +95,7 @@ const translations = {
         infra_b1_t: "International Structure",
         infra_b1_d: "With our own team, we ensure the quality of our products at every stage of the process.",
         infra_b2_t: "National Service",
-        infra_b2_d: "Direct delivery throughout Brazilian territory. We have headquarters in <strong>SP and PE</strong> for fractional distribution.",
+        infra_b2_d: "Direct delivery throughout Brazilian territory. We have headquarters in <strong>RJ</strong> for fractional distribution.",
         infra_b3_t: "Quality Certificates",
         infra_b3_d: "We hold all the regulatory and quality certifications required by the most demanding markets.",
         
@@ -129,7 +129,7 @@ const translations = {
         footer_desc: "The Giannone group is made up of industries, transport companies, and a Commercial Importer. We guarantee quality and efficiency for your business.",
         footer_nav: "Navigation",
         footer_cont: "Contact Us",
-        footer_c1: "Offices in SP and PE",
+        footer_c1: "Office in RJ",
         footer_c2: "Service all over Brazil",
         footer_rights: "All rights reserved."
     }
