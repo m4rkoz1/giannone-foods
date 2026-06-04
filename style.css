@@ -396,7 +396,7 @@ img {
 /* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
-    bottom: 40px;
+    bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -413,6 +413,65 @@ img {
     opacity: 1;
     color: var(--color-white);
 }
+
+/* Hero Ticker */
+.hero-ticker {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 0;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.hero-ticker-track {
+    display: flex;
+    width: calc(260px * 14);
+    animation: tickerScroll 35s linear infinite;
+}
+
+.hero-ticker-track:hover {
+    animation-play-state: paused;
+}
+
+.ticker-item {
+    flex-shrink: 0;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 14px;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.ticker-item img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: var(--shadow-sm);
+}
+
+@keyframes tickerScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-260px * 7));
+    }
+}
+
 
 .mouse {
     width: 26px;
@@ -615,6 +674,160 @@ img {
 
 .learn-more:hover i {
     transform: translateX(4px);
+}
+
+/* ==========================================================================
+   Tomato Pulp Highlight Banner
+   ========================================================================== */
+.tomato-highlight-banner {
+    position: relative;
+    padding: 120px 0;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.tomato-banner-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+    mix-blend-mode: luminosity;
+    z-index: 1;
+    transition: transform 0.5s ease;
+}
+
+.tomato-highlight-banner:hover .tomato-banner-bg {
+    transform: scale(1.05);
+}
+
+.tomato-banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(193, 39, 45, 0.95) 0%, rgba(161, 30, 36, 0.85) 100%);
+    z-index: 2;
+}
+
+.tomato-banner-container {
+    position: relative;
+    z-index: 3;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.tomato-banner-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    margin-bottom: 24px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.brazil-flag-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.tomato-banner-container h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--color-white);
+    margin-bottom: 16px;
+    line-height: 1.25;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.tomato-banner-container p {
+    font-size: 20px;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* ==========================================================================
+   Product Category Tabs
+   ========================================================================== */
+.product-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    border: 1px solid var(--color-grey-light);
+    padding: 10px 24px;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.tab-btn:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+.tab-btn.active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+    box-shadow: 0 4px 12px rgba(193, 39, 45, 0.25);
+}
+
+/* Product Card Filter Animate */
+.product-card {
+    transition: opacity 0.4s ease, transform 0.4s ease, box-shadow var(--transition);
+}
+
+.product-card.hide {
+    display: none;
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.product-card.show {
+    display: block;
+    animation: fadeInScale 0.4s ease forwards;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
 }
 
 /* ==========================================================================
