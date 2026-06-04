@@ -7,7 +7,7 @@ const translations = {
         nav_contact: "Fale Conosco",
         
         hero_title_1: "Líderes em ",
-        hero_title_2: "Morangos & Polpa de Tomate",
+        hero_title_2: "Morangos Congelados & Polpa de Tomate",
         hero_title_3: " no Brasil",
         hero_desc: "Liderando o mercado nacional de importação. Levamos ingredientes premium de todo o mundo direto para a sua indústria alimentícia.",
         hero_btn_1: "Conheça a Linha",
@@ -102,7 +102,7 @@ const translations = {
         nav_contact: "Contact Us",
         
         hero_title_1: "Leaders in ",
-        hero_title_2: "Strawberries & Tomato Pulp",
+        hero_title_2: "Frozen Strawberries & Tomato Pulp",
         hero_title_3: " in Brazil",
         hero_desc: "Leading the national import market. We deliver premium ingredients from around the world straight to your food industry.",
         hero_btn_1: "View Catalog",

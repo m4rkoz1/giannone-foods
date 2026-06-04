@@ -396,7 +396,7 @@ img {
 /* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
-    bottom: 100px;
+    bottom: 140px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -415,23 +415,27 @@ img {
 }
 
 /* Hero Ticker */
+:root {
+    --ticker-item-width: 450px;
+}
+
 .hero-ticker {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.45);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 12px 0;
+    padding: 16px 0;
     overflow: hidden;
     z-index: 10;
 }
 
 .hero-ticker-track {
     display: flex;
-    width: calc(260px * 14);
+    width: calc(var(--ticker-item-width) * 14);
     animation: tickerScroll 35s linear infinite;
 }
 
@@ -441,26 +445,31 @@ img {
 
 .ticker-item {
     flex-shrink: 0;
-    width: 260px;
+    width: var(--ticker-item-width);
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
     color: var(--color-white);
     font-family: var(--font-heading);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
     border-right: 1px solid rgba(255, 255, 255, 0.15);
-    padding: 0 20px;
+    padding: 0 24px;
     box-sizing: border-box;
 }
 
 .ticker-item img {
-    width: 36px;
-    height: 36px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid rgba(255, 255, 255, 0.8);
+    border: 3px solid rgba(255, 255, 255, 0.85);
     box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease;
+}
+
+.ticker-item:hover img {
+    transform: scale(1.08);
 }
 
 @keyframes tickerScroll {
@@ -468,9 +477,32 @@ img {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-260px * 7));
+        transform: translateX(calc(var(--ticker-item-width) * -7));
     }
 }
+
+@media (max-width: 768px) {
+    :root {
+        --ticker-item-width: 280px;
+    }
+    .hero-ticker {
+        padding: 10px 0;
+    }
+    .ticker-item {
+        gap: 12px;
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    .ticker-item img {
+        width: 44px;
+        height: 44px;
+        border-width: 2px;
+    }
+    .scroll-indicator {
+        bottom: 95px;
+    }
+}
+
 
 
 .mouse {
