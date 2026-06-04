@@ -77,6 +77,34 @@ document.addEventListener('DOMContentLoaded', () => {
         box.style.transitionDelay = `${index * 0.1}s`;
         observer.observe(box);
     });
+    // Product Catalog Filtering
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const cards = document.querySelectorAll('.product-card');
+
+    if (tabBtns.length > 0 && cards.length > 0) {
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                tabBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                cards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    
+                    if (filterValue === 'all' || category === filterValue) {
+                        card.classList.remove('hide');
+                        card.classList.add('show');
+                    } else {
+                        card.classList.remove('show');
+                        card.classList.add('hide');
+                    }
+                });
+            });
+        });
+    }
 
     // Language Switching Logic
     const btnPT = document.getElementById('lang-pt');
