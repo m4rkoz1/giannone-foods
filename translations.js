@@ -68,8 +68,6 @@ const translations = {
         prod_p9_title: "Polpa de Tomate",
         prod_p9_desc: "Sabor e cor intensa. Somos um dos três maiores importadores no Brasil.",
         prod_p9_badge: "Top 3 Brasil",
-        prod_p10_title: "Purês e Polpas",
-        prod_p10_desc: "Congelados, pasteurizados ou assépticos de força única e polpas concentradas.",
         
         diff_tag: "Por Que Escolher a Giannone?",
         diff_title: "Nossos Diferenciais",
@@ -163,8 +161,6 @@ const translations = {
         prod_p9_title: "Tomato Pulp",
         prod_p9_desc: "Intense flavor and color. We are one of the top three importers in Brazil.",
         prod_p9_badge: "Top 3 Brazil",
-        prod_p10_title: "Purees and Pulps",
-        prod_p10_desc: "Frozen, pasteurized, or aseptic single-strength and concentrated pulps.",
         
         diff_tag: "Why Choose Giannone?",
         diff_title: "Our Differentials",
